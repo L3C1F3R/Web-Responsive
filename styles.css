@@ -1,0 +1,219 @@
+:root {
+  --clr-text: #5a5a5a;
+  --clr-primary: #067E0A;
+  --clr-accent: #764981;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--clr-text);
+  font-size: 1.125rem;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  padding: 2em 1em;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  text-align: center;
+}
+
+h2, h3 {
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p{
+  margin-bottom: 0.85em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navigation */
+
+header {
+  padding: 1em 0 1.5em 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Homepage Style */
+.hero {
+  background-color: var(--clr-accent);
+  background-image: url("https://render.fineartamerica.com/images/rendered/default/flat/puzzle/images/artworkimages/medium/3/artworkimage-medium-35483736-20958252.jpg?&targetx=-84&targety=-128&imagewidth=1176&imageheight=981&modelwidth=1000&modelheight=750&backgroundcolor=ECFE3B&orientation=0&producttype=puzzle-18-24&brightness=25&v=6");
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15vh 1em;
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.section-title-small {
+  font-size: 3rem;
+}
+
+.intro {
+ text-align: center;
+}
+
+.about-us {
+  background-color: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.btn-primary {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  background-color: var(--clr-accent);
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5em;
+  border-radius: 1em;
+
+}
+
+.btn-primary:hover {
+  color: red;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.product {
+  background: white;
+  border: 1px solid red;
+  border-radius: 0.35em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.product__content {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.product__title {
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+}
+
+.btn-accent {
+  background: var(--clr-primary);
+  text-decoration: none;
+  padding: 1.5em;
+  color: white;
+  border-radius: 2em;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+footer {
+  background: #333;
+  padding: 3em 1em;
+  color: white;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav a {
+  color: white;
+}
+
+.footer-nav a:hover {
+  color: red;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social a {
+  color: white;
+}
+
+.footer-social a:hover {
+  color: red;
+}
+
+@media (min-width: 750px) {
+  section {
+    padding: 6em 1em;
+  }
+
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us__intro,
+  .about-us__body {
+    flex: 0 1 50%;
+  }
+}
